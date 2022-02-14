@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+div input{
+    width: 80%;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #4F5BEF;
+    outline: none;
+    padding: 0px 30px;
+    margin-left: 13%;
+}
+
+input:focus{
+    border: 2px solid #79f26e;
+}
+
+div i{
+    position: absolute;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+.fa-solid{
+    color: #fff;
+}
+
+
+.container{
+    display: flex;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    min-height: 100vh;
+    background-color: #4F5BEF;
+    padding: 50px;
+}
+
+.logo img{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+
+.image{
+    background-image: url('../images/undraw_interview_rmcf.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 55%;
+}
+
+button{
+    width: 80%;
+    margin-left: 13%;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    outline: none;
+    border: #fff;
+    background-color: #fff;
+    padding: 0px 30px;
+    height: 35px;
+    cursor: pointer;
+    color: #423e3e;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.1s ease;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+p, a{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.error{
+    color: #c21a1a;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+
+    form,
+    .content{
+        width: 100%;
+    }
+
+    div i{
+        margin-left: 1%;
+    }
+
+    div input{
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    button{
+        width: 100%;
+        margin-left: 1%;
+    }
+}
