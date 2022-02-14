@@ -18,8 +18,8 @@ let email = id('email'),
 
         if(id.value.trim() === '') {
             errorMsg[serial].innerHTML = message;
-            id.style.border = '2px solid #c21a1a';
-            favIcon[serial].style.color = '#c21a1a';
+            id.style.border = '2px solid #FF5757';
+            favIcon[serial].style.color = '#FF5757';
         }else {
             errorMsg[serial].innerHTML = '';
             id.style.border = '2px solid #79f26e';
